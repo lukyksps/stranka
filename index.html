@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Úvodní stránka</title>
+    <link rel="stylesheet" href="reset.css" media="screen" />
     <style>
         body, html {
             margin: 0;
@@ -12,7 +13,7 @@
             font-family: Arial, Helvetica, sans-serif;
         }
         .top-section {
-            background: linear-gradient(to right, #333 0%, #555 100%);
+            background: linear-gradient(to right, #00ffff 0%, #273469 100%);
             height: 70%;
             position: relative;
             text-align: center;
@@ -27,7 +28,7 @@
             left: 0;
             width: 100%;
             height: 100px;
-            background: #fff;
+            background: #ffdbb5;
             clip-path: polygon(0% 70%, 25% 85%, 50% 70%, 75% 85%, 100% 70%, 100% 100%, 0% 100%);
         }
         .title {
@@ -41,16 +42,16 @@
         }
         .button {
             display: inline-block;
-            background-color: #777;
+            background-color: #5B6C5D;
             color: #fff;
             padding: 15px 30px;
             margin: 10px;
             border-radius: 10px;
             text-decoration: none;
             transition: background-color 0.3s;
-        }
+        } 
         .button:hover {
-            background-color: #555;
+            background-color: #7A918D;
         }
         .content-section {
             display: flex;
@@ -86,7 +87,7 @@
         }
         .contact-button {
             display: inline-block;
-            background-color: #777;
+            background-color: #5b6c5d;
             color: #fff;
             padding: 10px 20px;
             margin: 5px;
@@ -95,7 +96,7 @@
             transition: background-color 0.3s;
         }
         .contact-button:hover {
-            background-color: #555;
+            background-color: #7a918d;
         }
         .image-container {
             margin-bottom: 20px;
@@ -126,34 +127,8 @@
         .sticky-button:hover {
             background-color: #555;
         }
-        .quick-menu {
-            position: fixed;
-            width: 200px;
-            bottom: 100px;
-            right: 20px;
-            background-color: #777;
-            padding: 10px;
-            border-radius: 10px;
-            display: none;
-            flex-direction: column;
-            gap: 10px;
-        }
-        .quick-menu a {
-            color: #fff;
-            text-decoration: none;
-            text-align: center;
-            padding: 5px;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-        .quick-menu a:hover {
-            background-color: #555;
-        }
-        .opened {
-            display: flex;
-        }
         .footer {
-            background-color: #999;
+            background-color: #FF1B1C;
             color: #f5f5f5;
             text-align: center;
             padding: 10px 0;
@@ -169,7 +144,7 @@
             width: 200px;
             height: 200px;
             transform: rotate(25deg);
-            background-color: #333;
+            background-color: #32746d;
             margin: 20px;
         }
         .rect2 {
@@ -179,17 +154,10 @@
             width: 150px;
             height: 150px;
             transform: rotate(35deg);
-            background-color: #444;
+            background-color: #01200f;
             margin: 20px;
         }
     </style>
-    <script>
-        function toggleMenu() {
-            console.info('Menu clicked');
-            const menu = document.querySelector('.quick-menu')
-            menu.classList.toggle('opened');
-        }
-    </script>
 </head>
 <body>
     <div class="top-section">
@@ -230,10 +198,6 @@
     <footer class="footer">
         Copyright SPŠ-CL &copy; 2024. All rights reserved.
     </footer>
-    <button class="sticky-button" onclick="toggleMenu()">+</button>
-    <div class="quick-menu">
-        <a href="https://google.com">Google</a>
-        <a href="https://seznam.cz">Seznam</a>
-    </div>
+    <button class="sticky-button">+</button>
 </body>
 </html>
